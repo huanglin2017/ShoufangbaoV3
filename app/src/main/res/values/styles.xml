@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:buttonStyle">@style/App.Button</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="App.Button" parent="@android:style/Widget.Holo.Button">
+        <item name="android:minHeight">0dip</item>
+        <item name="android:minWidth">0dip</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="TableBarTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="BigTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/big_title</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="SmallTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/small_title</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="ContentText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/content_text</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="DividerLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/divider_line</item>
+    </style>
+
+    <style name="DividerTiao">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_tiao</item>
+        <item name="android:background">@color/divider_tiao</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">135dp</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">@color/button_pressed</item>
+    </style>
+
+    <style name="DialogNoTitle" parent="android:style/Theme.Dialog">
+        <!-- 是否有标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景颜色及透明度-->
+        <item name="android:windowBackground">@drawable/common_roundradius_blackrec</item>
+        <!-- 是否浮现在activity上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:windowFrame">@null</item>
+
+    </style>
+    <!-- 客户界面的-->
+    <style name="custom_titlebar_btnstyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/custom_titlebar_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <!-- 选择框动画主题 -->
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/showpopwidow</item>
+        <item name="android:windowExitAnimation">@anim/hiddenpopwindow</item>
+    </style>
+
+    <!-- APP通用对话框 -->
+    <style name="Dialog_Notitle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/common_roundradius_blackrec</item>
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+    </style>
+
+    <style name="Common_Tab_Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_common_tab</item>
+        <item name="android:textColor">@color/commo_tab_color</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="Big_Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_bigbtn</item>
+        <item name="android:textColor">@color/common_bigbtn_text</item>
+    </style>
+
+    <declare-styleable name="RotateTextView">
+        <attr name="degree" format="dimension" />
+    </declare-styleable>
+
+    <style name="Dialog_NoTitle_Transparennt" parent="@android:style/Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+    </style>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="227dp"
+        android:layout_height="322dp"
+        android:background="@drawable/report_hongbao_pre"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/hongbao_done_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            android:text="今日报备红包都发完啦!"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/hongbao_done_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hongbao_done_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="宝财神口袋空啦!"
+            android:textColor="#ffdfa1"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/hongbao_done_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hongbao_done_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp"
+            android:src="@drawable/packet_known" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/layout_help"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/selector_account_setting"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1.0"
+            android:text="帮助中心"
+            android:textColor="#464646"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerLine"
+        android:layout_marginLeft="13dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_report"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/selector_account_setting"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1.0"
+            android:text="安全报备协议"
+            android:textColor="#464646"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerLine"
+        android:layout_marginLeft="13dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_about"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/selector_account_setting"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1.0"
+            android:text="关于售房宝"
+            android:textColor="#464646"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerLine"
+        android:layout_marginLeft="13dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_version"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/selector_account_setting"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1.0"
+            android:text="版本信息"
+            android:textColor="#464646"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerLine"
+        android:layout_marginLeft="13dp" />
+</LinearLayout>

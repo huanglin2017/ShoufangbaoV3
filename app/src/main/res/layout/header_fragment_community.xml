@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/social_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp">
+
+        <ImageView
+            android:id="@+id/top_qiandao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/community_sign_topwaitsign" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/social_top_qiandao_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="56dp"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/social_sign_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1元"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_week8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@id/social_sign"
+        android:src="@drawable/community_sign_gift" />
+
+    <RelativeLayout
+        android:id="@+id/sign_line_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/social_sign"
+        android:layout_marginTop="18dp"
+        >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_weight="1"
+            android:background="#fa8f8d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/line_week1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_sign_alreadysign" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#fa8f8d" />
+
+            <ImageView
+                android:id="@+id/line_week2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_sign_alreadysign" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#fa8f8d" />
+
+            <ImageView
+                android:id="@+id/line_week3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_sign_alreadysign" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#fa8f8d" />
+
+            <ImageView
+                android:id="@+id/line_week4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_sign_alreadysign" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#fa8f8d" />
+
+            <ImageView
+                android:id="@+id/line_week5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_sign_alreadysign" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#fa8f8d" />
+
+            <ImageView
+                android:id="@+id/line_week6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_sign_alreadysign" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#fa8f8d" />
+
+            <ImageView
+                android:id="@+id/line_week7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_sign_alreadysign" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_week_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sign_line_rl"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/week1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_week_monday" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/week2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_week_tuesday" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/week3"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_week_wednesday" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/week4"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_week_thursday" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/week5"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_week_friday" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/week6"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_week_saturday" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/week7"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_week_sunday" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/sign_week_ll"
+        android:background="@color/divider_line"
+        />
+    <LinearLayout
+        android:id="@+id/sign_rule_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_week_ll"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/social_sign_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="活动区域认证标准经纪人，每日签到可领取奖励"
+            style="@style/ContentText"
+            />
+    </LinearLayout>
+    <View
+        android:background="@color/divider_tiao"
+        android:layout_width="match_parent"
+        android:layout_below="@id/sign_rule_ll"
+        android:layout_height="9dp"
+        android:layout_marginTop="10dp"
+        />
+    <RelativeLayout
+        android:id="@+id/point_market"
+        android:layout_below="@id/sign_rule_ll"
+        android:layout_marginTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@drawable/community_sign_money"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/community_enter_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="35dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/common_rawright_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="37dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:background="@color/divider_tiao"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_below="@id/point_market"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:text="我的签到"
+            android:visibility="gone"
+            android:textColor="#323232"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/resiger_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:text="签到规则"
+            android:textColor="#323232"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_used"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_money_one_grey">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/btn_my_card_exchange_grey" />
+
+    <TextView
+        android:id="@+id/tv_endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="big_title">#323232</color>
+    <color name="small_title">#464646</color>
+    <color name="content_text">#5a5a5a</color>
+    <color name="divider_line">#e1e1e1</color>
+    <color name="divider_tiao">#f3f3f3</color>
+    <color name="common_title_bar">#be1a20</color>
+    <color name="common_title_bar_1">#be1a21</color>
+    <color name="common_select">#be1a20</color>
+    <color name="common_red">#f15353</color>
+    <color name="common_black">#000000</color>
+    <color name="common_green">#80d739</color>
+    <color name="common_bg_halftransparent">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="common_listview_div">#f0ebe2</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="eight_transparent">#ccffffff</color>
+    <color name="login_bg_edit">#edebeb</color>
+    <color name="custome_follow_bg">#f0f0f0</color>
+    <color name="btn_navigation_unselected">#9090a0</color>
+    <color name="unselect_tishi">#bab7b7</color>
+    <color name="bottom_select_city_background">#f7f3f3</color>
+    <color name="current_city_color">#f4efef</color>
+    <color name="current_city_color_name">#282828</color>
+    <color name="black">#000000</color>
+    <color name="pageindicator_footer">#ffffd267</color>
+    <color name="list_item_sepline">#f0ebe2</color>
+    <color name="contact_list_text">#332502</color>
+    <color name="set_select_color">#e2e2e2</color>
+    <color name="lockpattern_text">#6d6d6d</color>
+    <color name="lockpattern_bg">#e2e2e2</color>
+
+    <!--&lt;!&ndash; lockpattern图案解锁 &ndash;&gt;-->
+    <!--<attr name="alp_42447968_color_lock_pattern_view_regular" format="reference"/>-->
+    <!--<attr name="alp_42447968_color_lock_pattern_view_success" format="reference"/>-->
+    <!--<attr name="alp_42447968_color_lock_pattern_view_error" format="reference"/>-->
+    <!--<color name="alp_42447968_lock_pattern_view_regular_light">#ffffffff</color>-->
+    <!--<color name="alp_42447968_lock_pattern_view_success_light">#ffffffff</color>-->
+    <!--<color name="alp_42447968_lock_pattern_view_error_light">#fff4511e</color>-->
+    <!--<color name="alp_42447968_lock_pattern_view_regular_dark">#ff37474f</color>-->
+    <!--<color name="alp_42447968_lock_pattern_view_success_dark">#ff009688</color>-->
+    <!--<color name="alp_42447968_lock_pattern_view_error_dark">#fff4511e</color>-->
+    <!--<color name="alp_42447968_view_group_progress_bar_background">#cc515151</color>-->
+    <!--<color name="alp_42447968_aosp_background_material_dark">#ff303030</color>-->
+    <!--<color name="alp_42447968_aosp_background_material_light">#ffeeeeee</color>-->
+</resources>

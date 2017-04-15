@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/custom_gone_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    style="@style/BigTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/detail_phone"
+                    style="@style/SmallTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/custom_gone_v"
+                style="@style/DividerTiao" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/myreport_phone" />
+
+                <TextView
+                    android:id="@+id/detail_build_name"
+                    style="@style/BigTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="首创国际半岛"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/custom_gone_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/report_hotline" />
+
+                <TextView
+                    android:id="@+id/report_hotline"
+                    style="@style/SmallTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="客服热线" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detail_num"
+                style="@style/SmallTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="报备号：A13126584848" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_one_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/report_progress_undone" />
+
+                <TextView
+                    android:id="@+id/detail_state_one_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已报备"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_state_one_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_two_line"
+                    android:layout_width="2dp"
+                    android:layout_marginBottom="-6dp"
+                    android:layout_marginTop="-6dp"
+                    android:layout_height="60dp"
+                    android:background="#f0f0f0" />
+                <TextView
+                    android:id="@+id/report_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:textColor="#f15353"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_two_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/report_progress_undone" />
+
+                <TextView
+                    android:id="@+id/detail_state_two_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已确认"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_state_two_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_three_line"
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="-6dp"
+                    android:layout_marginTop="-6dp"
+                    android:background="#f0f0f0" />
+                <TextView
+                    android:id="@+id/jieshou_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:textColor="#f15353"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_three_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/report_progress_undone" />
+
+                <TextView
+                    android:id="@+id/detail_state_three_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已带看"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_state_three_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_four_line"
+                    android:layout_width="2dp"
+                    android:layout_marginBottom="-6dp"
+                    android:layout_marginTop="-6dp"
+                    android:layout_height="60dp"
+                    android:background="#f0f0f0" />
+                <TextView
+                    android:id="@+id/see_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:textColor="#f15353"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_four_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/report_progress_undone" />
+
+                <TextView
+                    android:id="@+id/detail_state_four_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已认购"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_state_four_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_five_line"
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="-6dp"
+                    android:layout_marginTop="-6dp"
+                    android:background="#f0f0f0" />
+                <TextView
+                    android:id="@+id/buy_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:textColor="#f15353"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_five_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/report_progress_undone" />
+
+                <TextView
+                    android:id="@+id/detail_state_five_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已成交"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_state_five_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_six_line"
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="-6dp"
+                    android:layout_marginTop="-6dp"
+                    android:background="#f0f0f0" />
+                <TextView
+                    android:id="@+id/exchange_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="26dp"
+                    android:textColor="#f15353"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_state_six_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/report_progress_undone" />
+
+                <TextView
+                    android:id="@+id/detail_state_six_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已结佣"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_state_six_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/report_detail_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/report_end_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:maxLines="2"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#f15353"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/custom_gone_lll"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/common_red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/detail_launch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/common_select"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_launch_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/detail_launch" />
+
+            <TextView
+                android:id="@+id/button_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/detail_launch_img"
+                android:text="发起带看"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="20dp"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/detail_apply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/common_select"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_apply_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/detail_apply" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/detail_apply_img"
+                android:text="申请带看奖励"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

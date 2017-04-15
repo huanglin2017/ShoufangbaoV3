@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_signdialogtop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:paddingLeft="38dp"
+        android:paddingRight="38dp">
+
+        <Button
+            android:id="@+id/moneydialog_btn_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/dialog_money_weixin"
+            android:button="@null"
+            android:includeFontPadding="false"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moneydialog_btn_weixin"
+            android:layout_marginTop="12dp"
+            android:text="微信提现"
+            android:textSize="12sp"
+            android:textColor="@color/small_title" />
+
+        <Button
+            android:id="@+id/moneydialog_btn_ka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/dialog_money_yinhangka"
+            android:button="@null"
+            android:includeFontPadding="false"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moneydialog_btn_weixin"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="12dp"
+            android:text="银行卡提现"
+            android:textSize="12sp"
+            android:textColor="@color/small_title" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="9dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/moneydialog_xinghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/small_title"
+            android:text="※" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/moneydialog_xinghao"
+            android:text="关注微信提现，实时到账；"
+            android:textSize="12sp"
+            android:textColor="@color/small_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moneydialog_xinghao_1"
+            android:layout_below="@id/moneydialog_xinghao"
+            android:layout_marginTop="12dp"
+            android:text="※"
+            android:textSize="12sp"
+            android:textColor="@color/small_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moneydialog_xinghao"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/moneydialog_xinghao"
+            android:text="绑定银行卡提现，两个工作日内到账。"
+            android:textSize="12sp"
+            android:textColor="@color/small_title"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moneydialog_xinghao_1"
+            android:layout_marginTop="12dp"
+            android:text="※"
+            android:textSize="12sp"
+            android:textColor="@color/small_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moneydialog_xinghao_1"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/moneydialog_xinghao"
+            android:text="100元以下，仅支持微信提现。"
+            android:textSize="12sp"
+            android:textColor="@color/small_title"
+            />
+    </RelativeLayout>
+</LinearLayout>

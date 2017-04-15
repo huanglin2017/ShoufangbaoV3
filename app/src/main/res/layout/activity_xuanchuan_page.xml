@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_model"
+            style="@style/Common_Tab_Button"
+            android:text="@string/model"/>
+        <Button
+            android:id="@+id/btn_mine"
+            style="@style/Common_Tab_Button"
+            android:text="@string/mine"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/layout_xuanchuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+    </FrameLayout>
+</LinearLayout>

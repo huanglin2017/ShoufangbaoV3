@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 显示预览图形 -->
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 相对布局，放置两个按钮 -->
+    <com.kupangstudio.shoufangbao.widget.RotateTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="拍摄证件正面照片\n证件文字需清晰可读"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:degree="90px" />
+
+    <Button
+        android:id="@+id/camera_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_camera_btn" />
+
+    <com.kupangstudio.shoufangbao.widget.RotateTextView
+        android:id="@+id/camera_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="16sp"
+        app:degree="90px" />
+
+    <com.kupangstudio.shoufangbao.widget.RotateTextView
+        android:id="@+id/camera_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="确定"
+        app:degree="90px"/>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/common_title_bar" >
+
+        <ImageView android:id="@+id/navbar_image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/common_titlebar_left"/>
+
+        <TextView android:id="@+id/navbar_title"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            style="@style/SmallTitle"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_main_search"
+            android:drawableLeft="@drawable/custom_search_edittext"
+            android:drawablePadding="10dp"
+            android:text="楼盘名称"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_select"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/header_select_area"
+            style="@style/SmallTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/arrow_select"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:text="@string/select_area" />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider_line" />
+
+        <Button
+            android:id="@+id/header_select_price"
+            style="@style/SmallTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/arrow_select"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:text="@string/select_price" />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider_line" />
+        <Button
+            android:id="@+id/header_select_type"
+            style="@style/SmallTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/arrow_select"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:text="@string/select_type" />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider_line" />
+
+        <Button
+            android:id="@+id/header_select_more"
+            style="@style/SmallTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/arrow_select"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:text="@string/select_more" />
+
+    </LinearLayout>
+
+    <View style="@style/DividerLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.kupangstudio.shoufangbao.widget.PullToRefreshListView
+            android:id="@+id/buildselect_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:overScrollMode="never"
+            ptr:ptrShowIndicator="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+        <include layout="@layout/common_emptyview"/>
+        <RelativeLayout
+            android:id="@+id/loading_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/common_loading_progress"
+                android:indeterminateDuration="1000" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

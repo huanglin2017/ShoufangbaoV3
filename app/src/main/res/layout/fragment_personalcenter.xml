@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/fragment_center_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/header_center_unReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#be1a20">
+
+                    <ImageView
+                        android:layout_width="89dp"
+                        android:layout_height="89dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_mine_big" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_mine_middle" />
+
+                    <TextView
+                        android:id="@+id/header_center_unreg_login"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_mine_small"
+                        android:gravity="center"
+                        android:text="@string/login_reg"
+                        android:textColor="#be1a20"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/header_center_unauth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#be1a20"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/header_center_unauth_head_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="89dp"
+                                android:layout_height="89dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_big" />
+
+                            <ImageView
+                                android:layout_width="81dp"
+                                android:layout_height="81dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_middle" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/header_center_unauth_head"
+                                android:layout_width="73dp"
+                                android:layout_height="73dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_small" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/mine_shangjiantou" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/mine_xiajiantou" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:layout_width="89dp"
+                                android:layout_height="89dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_big" />
+
+                            <ImageView
+                                android:layout_width="81dp"
+                                android:layout_height="81dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_middle" />
+
+                            <TextView
+                                android:id="@+id/header_center_unauth_verify"
+                                android:layout_width="73dp"
+                                android:layout_height="73dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_small"
+                                android:gravity="center"
+                                android:text="@string/go_auth"
+                                android:textColor="#be1a20"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/header_center_unauth_head_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/header_center_unauth_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/header_center_unauth_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:includeFontPadding="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/header_center_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#be1a20"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/header_center_auth_head_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:layout_width="89dp"
+                                android:layout_height="89dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_big" />
+
+                            <ImageView
+                                android:layout_width="81dp"
+                                android:layout_height="81dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_mine_middle" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/header_center_auth_head"
+                                android:layout_width="73dp"
+                                android:layout_height="73dp"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/header_center_auth_head_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/header_center_auth_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/header_center_auth_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/header_center_unreg_wallet"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/header_center_unreg_wallet_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/mine_integral" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/header_center_unreg_wallet_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/mine_wallet"
+                            android:textColor="#464646"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_height"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/divider_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/header_center_unreg_message"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/header_center_unreg_message_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/mine_message" />
+
+                        <TextView
+                            android:id="@+id/header_center_message_circle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/header_center_unreg_message_image"
+                            android:layout_marginLeft="-5dp"
+                            android:layout_marginTop="-5dp"
+                            android:layout_toRightOf="@id/header_center_unreg_message_image"
+                            android:background="@drawable/circle_red"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/header_center_unreg_message_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/header_center_unreg_message_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/mine_message"
+                            android:textColor="#464646"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="57dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/circle_red"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_height"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/divider_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/header_center_unreg_report"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/header_center_unreg_report_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/mine_report" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/header_center_unreg_report_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/report_progress"
+                            android:textColor="#464646"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_height"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/divider_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/header_center_unreg_invite"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/header_center_unreg_invie_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/mine_collect" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/header_center_unreg_invie_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/invite_friend"
+                            android:textColor="#464646"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/divider_tiao" />
+
+                <com.kupangstudio.shoufangbao.widget.MyListView
+                    android:id="@+id/fragment_mine_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/divider_line"
+                    android:dividerHeight="@dimen/divider_height"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:background="@color/divider_line"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/loading_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/common_loading_progress"
+                android:indeterminateDuration="1000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

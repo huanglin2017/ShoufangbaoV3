@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.kupangstudio.shoufangbao.widget.PullToRefreshListView
+            android:id="@+id/refreshListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            ptr:ptrShowIndicator="false" />
+
+        <!--<com.kupangstudio.shoufangbao.widget.PullUpLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <include
+                layout="@layout/refresh_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.kupangstudio.shoufangbao.widget.PullUpScrollView
+                android:id="@+id/listview_placemore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:paddingBottom="8dp"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/transparent"
+                        android:textSize="2000sp"
+                        android:text="我"
+                        />
+                </LinearLayout>
+            </com.kupangstudio.shoufangbao.widget.PullUpScrollView>
+
+            <include
+                layout="@layout/load_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.kupangstudio.shoufangbao.widget.PullUpLayout>-->
+
+        <LinearLayout
+            android:id="@+id/table_searche_two"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/common_title_bar_1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/main_select_city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.kupangstudio.shoufangbao.widget.shimmer.ShimmerTextView
+                    android:id="@+id/tv_shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="5dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/main_location_default"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/main_location" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/homepager_head_search"
+                style="@style/ContentText"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_main_search"
+                android:drawableLeft="@drawable/build_search"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="楼盘名称" />
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:id="@+id/table_searche_one"
+             android:layout_width="match_parent"
+             android:layout_height="44dp"
+             android:background="@color/transparent"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:id="@+id/tv_shimmer1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="5dp"
+                 android:includeFontPadding="false"
+                 android:text="@string/main_location_default"
+                 android:textColor="@android:color/white"
+                 android:textSize="17sp" />
+
+             <ImageView
+                 android:id="@+id/iv_shimmer1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:src="@drawable/main_location" />
+
+             <TextView
+                 android:id="@+id/homepager_head_search1"
+                 style="@style/SmallTitle"
+                 android:layout_width="0dp"
+                 android:layout_height="31dp"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/bg_main_search"
+                 android:drawableLeft="@drawable/custom_search_edittext"
+                 android:drawablePadding="10dp"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="10dp"
+                 android:text="搜索" />
+         </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/header_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_searche_two"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/header_select_area"
+                    style="@style/SmallTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/arrow_select"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="14dp"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/select_area" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/divider_height"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                    <View
+                        android:layout_width="@dimen/divider_height"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/divider_line" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/header_select_price"
+                    style="@style/SmallTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/arrow_select"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="14dp"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/select_price" />
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/divider_height"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                    <View
+                        android:layout_width="@dimen/divider_height"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/divider_line" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/header_select_type"
+                    style="@style/SmallTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/arrow_select"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="14dp"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/select_type" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/divider_height"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+                    <View
+                        android:layout_width="@dimen/divider_height"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/divider_line" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/header_select_more"
+                    style="@style/SmallTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/arrow_select"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="14dp"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/select_more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/main_back_top"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/loading_build"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/common_loading_progress"
+                android:indeterminateDuration="1000" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingBottom="12dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="@drawable/bg_signdialogtop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:textColor="#323232"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:text="100元以下，敬请微信提现!"/>
+    <Button
+        android:id="@+id/moneydialog_btn"
+        android:layout_width="75dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:text="OK"
+        android:textSize="13sp"
+        android:includeFontPadding="false"
+        android:background="@drawable/bg_corner_red"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

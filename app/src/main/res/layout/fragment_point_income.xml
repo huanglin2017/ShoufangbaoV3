@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kupangstudio.shoufangbao.widget.PullToRefreshListView
+        android:id="@+id/pull_refresh_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider_line"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_empty" />
+
+        <TextView
+            style="@style/ContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="世界这么大，没网怎么看！" />
+        <Button
+            android:id="@+id/empty_btn"
+            android:layout_width="90dp"
+            android:layout_height="28dp"
+            style="@style/Big_Button"
+            android:layout_marginTop="22dp"
+            android:text="立即刷新"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/point_income_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/common_loading_progress"
+            android:indeterminateDuration="1000" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/multiadd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#be1a20">
+        <ImageView android:id="@+id/multi_add_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/common_titlebar_left"/>
+
+        <TextView android:id="@+id/multi_add_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <TextView android:id="@+id/multi_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/multichose_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/multiadd"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/common_listview_div"
+        android:dividerHeight="1.0px"
+        android:fastScrollEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/fast_position"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="34dip"
+        android:background="@drawable/sort_icon_bg_click"
+        android:gravity="center"
+        android:padding="2dip"
+        android:textColor="#404040"
+        android:textSize="48dip"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/linear_select"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/common_select"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/selectAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="全选"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/common_app_dialog_btn"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/selectCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/common_app_dialog_btn"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <com.kupangstudio.shoufangbao.widget.SideBar
+        android:id="@+id/multi_scroller"
+        android:layout_width="22dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/multiadd"
+        android:layout_above="@id/linear_select"
+        android:layout_gravity="top|right|center"
+        android:background="@color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/custom_multiaddcustom_sidebar" />
+
+    <TextView
+        android:id="@+id/multi_dialog"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/common_roundradius_rec"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30.0dip"
+        android:visibility="invisible" />
+</RelativeLayout>

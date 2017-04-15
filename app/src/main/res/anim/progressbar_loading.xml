@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/icon_loading_notification_0"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_6"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_7"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_8"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_9"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_10"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/icon_loading_notification_11"
+        android:duration="100"/>
+
+</animation-list>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/capture_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/capture_result"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/bg_capturetv"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan_login_new"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginTop="62dp"
+                />
+            <TextView
+                android:id="@+id/capture_text_tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网页版售房宝登录确认"
+                style="@style/SmallTitle"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                style="@style/ContentText"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/capture_btn"
+                android:layout_width="135dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="23dp"
+                android:layout_gravity="center"
+                style="@style/Big_Button"
+                android:text="确认登录"
+                />
+            <Button
+                android:id="@+id/capture_btn_rescan"
+                android:layout_width="135dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="23dp"
+                android:layout_gravity="center"
+                style="@style/Big_Button"
+                android:text="重新扫描"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/capture_btn_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="#5a5a5a"
+                android:text="取消登录"
+                android:layout_marginTop="30dp"
+                />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_capture_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/common_loading_progress"
+            android:indeterminateDuration="1000"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

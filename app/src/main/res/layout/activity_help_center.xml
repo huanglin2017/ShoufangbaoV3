@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="7dp"
+                android:text="1.快速注册:"
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    点击“登录/注册”按钮，使用手机号进行注册，成功注册后即是售房宝会员，即可进行楼盘报备，赚取个人佣金。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="2.微信登录："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    经纪人可选择微信登录的方式登录，在登录、注册页面点击微信登录。首次微信登录需要绑定手机号，进行微信授权，系统会自动发送验证码和随机密码，下次登录可直接使用绑定手机号加密码进行登录，也可以微信登录。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="3.身份认证："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    在个人中心点击“认证”按钮，上传真实名片照、姓名可完成身份认证，名片上的电话号码务必要和注册售房宝手机号一致，通过认证的会员将会享受更多的会员福利，认证的个人信息我们将严格保护。认证周期为一个工作日，请您耐心等待！"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/help_sign_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="4.签到豪礼："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/help_sign_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    通过认证的活动区域标准经纪人即可享受签到赚红包奖励，红包满十元即可微信提现，活动期间每签到一天奖励一元，成功签到满一个自然周再奖励八元红包，活动目前仅支持活动区域认证标准经纪人（活动区域：北京、临沂、潍坊、烟台、西安）。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="5.独立经纪人晋升机制："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    独立经纪人为无门店或者无有效证件证明自己是经纪人的做房地产业务群体，独立经纪人成功向售房宝报备并带看两位客户即可有晋升为售房宝的标准经纪人。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="6.丰厚佣金："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    客户正式签署认购协议之日起七个工作日内我们会将约定佣金打到您售房宝账号内。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="7.提现："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    建议100元以下提现采用微信提现方式，实时到账。首次微信提现必须关注售房宝微信公众号，提现金额到微信钱包内。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="8.客户管理："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    注册会员可在售房宝客户端添加客户，CRM客户管理系统助您的工作更加方便快捷，独有的云技术与加密技术确保客户资料万无一失，坚决防止资料被盗取与撬客行为。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="9.客户报备："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    登录即可报备客户，报备之后可选择自己带客户去楼盘，也可选择售房宝工作人员协助带看，报备之后即有客户确认单保障报备经纪人的利益，客户签约一次性发放佣金。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="10.报备客户电话隐藏："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    报备客户时只需要填写客户手机号前3位和后四位，顶级的安全报备，严防跑单。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="11.申请带看:"
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    成功报备后，在我的报备中查找该条报备记录点击“发起带看”按钮，稍后即会有售房宝相关人员联系您预约时间。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="12.申请带看奖励："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    带客户到楼盘案场后打开售房宝软件，在我的报备中查找本次带看记录信息点击“申请带看奖励”按钮，拍本人和客户在案场照片上传即可申请（仅限活动有带看奖励活动的楼盘可申请）。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="13.资讯信息："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    打开售房宝即可查看资讯，专业的行业资讯满足您的个人成长，为您的职业发展添砖加瓦。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:lineSpacingExtra="7dp"
+                android:text="14.计算器功能："
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="7dp"
+                android:text="    打开客户端即可使用计算器，最新新房与二手房贷款与税费计算器，帮助您快速交易。"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

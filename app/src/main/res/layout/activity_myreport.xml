@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_all"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="近30天"
+                android:textColor="@color/tab_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_report"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="已报备"
+                android:textColor="@color/tab_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_accept"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="已确认"
+                android:textColor="@color/tab_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_seeing"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="已带看"
+                android:textColor="@color/tab_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_purchase"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="已认购"
+                android:textColor="@color/tab_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_deal"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="已成交"
+                android:textColor="@color/tab_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_commission"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="已结佣"
+                android:textColor="@color/tab_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_end"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_bottom"
+                android:gravity="center"
+                android:text="已结束"
+                android:textColor="@color/tab_selector"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutAll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_select"
+            android:textSize="12sp"
+            android:text="查看更多报备信息，请点击"/>
+        <TextView
+            android:id="@+id/tvAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_select"
+            android:textSize="12sp"
+            android:text="“全部”"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

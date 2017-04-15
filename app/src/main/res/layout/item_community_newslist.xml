@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="17dp">
+
+        <ImageView
+            android:id="@+id/social_list_touxiang"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty_building_list"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="17dp">
+
+        <LinearLayout
+            android:id="@+id/message_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/social_list_zhuangtai"
+                android:layout_width="21dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/common_title_bar"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="9sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/social_list_title_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingRight="10dp"
+                android:textColor="#464646"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/social_list_content_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingRight="13dp"
+            android:textColor="#5a5a5a"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/social_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#5a5a5a"
+            android:textSize="10sp" />
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/social_list_content_social"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/social_list_chakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/community_news_browse" />
+
+            <TextView
+                android:id="@+id/social_list_chakan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:textColor="#5a5a5a"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

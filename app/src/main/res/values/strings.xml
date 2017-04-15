@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">知房·售房宝</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_custom_analysis">CustomAnalysisActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_reg">RegActivity</string>
+
+    <!--LoginActivity-->
+    <string name="login_edit_phone_hint">请输入手机号</string>
+    <string name="login_edit_password_hint">密码</string>
+    <string name="login_btn">登录</string>
+    <string name="login_forget_password">忘记密码</string>
+    <string name="login_go_reg">立即注册</string>
+    <string name="login_wechat_login">微信登录</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+
+    <!-- ForgetPasswordActivity -->
+    <string name="rpwdhint">请再次输入密码</string>
+
+    <!-- RegActivity-->
+    <string name="reg_sms_code">验证码</string>
+    <string name="reg_password">密码(6~12位数字和字母组成)</string>
+    <string name="reg_invite_code">邀请码(选填)</string>
+    <string name="reg_btn">注册</string>
+
+    <!-- CustomFragment -->
+    <string name="custom_right">更多</string>
+    <string name="custom_searchcustom">搜索客户</string>
+    <string name="custom_selectcustom">筛选客户</string>
+    <string name="custom_addcustom">添加客户</string>
+    <string name="custom_search_editfilter">  请输入关键字</string>
+
+    <!-- CustomAnalysisActivity-->
+    <string name="custom_analysis_sex">性别</string>
+    <string name="custom_analysis_willstrong">意向强度</string>
+    <string name="custom_analysis_willhousetype">意向户型</string>
+    <string name="custom_analysis_willsize">意向面积</string>
+    <string name="custom_analysis_willprice">意向价格</string>
+    <string name="custom_analysis_willtype">意向类型</string>
+
+    <!-- CustomAddfollowActivity & SugActivity-->
+    <string name="custom_addfollow_edit">请输入内容</string>
+    <string name="custom_addfollow_btn">保存</string>
+
+    <!-- CustomDetailActivity-->
+    <string name="custom_detail_edit">编辑</string>
+    <string name="custom_detail_follow">客户跟进</string>
+    <string name="custom_detail_detail">客户详情</string>
+    <string name="custom_detail_report">客户报备</string>
+    <string name="custom_detail_fragment_add_report">添加报备</string>
+
+    <!-- common -->
+    <string name="common_empty_text">世界那么大，没网怎么看！！！</string>
+    <string name="common_empty_button">刷新重试</string>
+    <string name="common_bottom_button">提交</string>
+
+    <!-- MiuiPointActivity -->
+    <string name="miui_hint">因MIUI系统限制，请V5版本进行如下设置，帮助售房宝正常运行</string>
+    <string name="miui_button_text">立即设置</string>
+    <!-- MainActivity -->
+    <string name="main_btn_main">首页</string>
+    <string name="main_btn_custom">客户</string>
+    <string name="main_btn_personalcenter">我的</string>
+    <string name="main_btn_community">V圈</string>
+    <!-- MainFragment -->
+    <string name="main_location_default">北京</string>
+    <string name="high_building">精品楼盘</string>
+    <string name="header_select">筛选</string>
+    <string name="junjia">均价：</string>
+    <string name="commission">佣金</string>
+    <string name="nomore">没有更多了，先去</string>
+    <string name="sign">签到</string>
+    <string name="get_money">领些零钱花吧！</string>
+    <string name="sign_money">积分商城</string>
+    <string name="my_report">我的报备</string>
+    <string name="cal_tool">计算工具</string>
+    <string name="cooperation_brand">合作品牌</string>
+    <string name="private_make">私人订制</string>
+    <!-- SelectCity -->
+    <string name="select_city_title">选择城市</string>
+    <string name="select_city_hint">售房宝将陆续开通更多城市，敬请期待！</string>
+    <string name="current_city">当前城市</string>
+    <string name="selected_city">可选择城市</string>
+    <!-- BuildSelect -->
+    <string name="select_area">区域</string>
+    <string name="select_type">类型</string>
+    <string name="select_layout">户型</string>
+    <string name="select_more">更多</string>
+    <string name="select_price">价格</string>
+    <string name="select_feature">特色</string>
+    <!-- BuildDetailActivity-->
+    <string name="open_state">开盘状态：</string>
+    <string name="build_junjia">楼盘价格：</string>
+    <string name="collect">收藏</string>
+    <string name="browse_num">浏览量</string>
+    <string name="attention_num">关注度</string>
+    <string name="report_num">报备数</string>
+    <string name="developer_youhui">楼盘优惠：</string>
+    <string name="position">地理位置：</string>
+    <string name="build_parameter">楼盘参数</string>
+    <string name="make_leaflet">宣传页制作</string>
+    <string name="build_sales">楼盘卖点</string>
+    <string name="goal_custom">目标客户</string>
+    <string name="tuoke_skill">拓客技巧</string>
+    <string name="layout_pic">户型图</string>
+    <string name="hot_line">客服热线：</string>
+    <string name="shoufangbao_support">售房宝支持</string>
+    <string name="phone_report">马上带看</string>
+    <string name="see_more">查看更多</string>
+    <string name="see_more_click">点击查看更多</string>
+    <!-- BuildImageActivity -->
+    <string name="effect_pic">效果图</string>
+    <string name="shijing_pic">实景图</string>
+    <string name="guihua_pic">规划图</string>
+    <string name="peitao_pic">配套图</string>
+    <string name="save_pic">保存图片</string>
+    <string name="share_pic">分享图片</string>
+    <!-- PersonalCenterFragment -->
+    <string name="login_reg">登录/注册</string>
+    <string name="mine_wallet">积分商城</string>
+    <string name="mine_message">我的消息</string>
+    <string name="report_progress">报备进程</string>
+    <string name="invite_friend">我的收藏</string>
+    <string name="go_auth">去认证</string>
+    <!-- AccountSettingActivity -->
+    <string name="lock_pattern">手势密码</string>
+    <string name="modify_lock_pattern">修改手势密码</string>
+    <string name="float_window">来电悬浮窗</string>
+    <string name="push_switch">推送开关</string>
+    <string name="modify_password">修改密码</string>
+    <string name="modify_phone_num">修改手机号</string>
+    <string name="logout">退出登录</string>
+    <!-- SetFloatWindowActivity -->
+    <string name="miui_float_tip">小米手机用户请参考如下步骤：\n依次点击设置→应用→售房宝→显示悬浮窗。</string>
+    <string name="set_liji">立即设置</string>
+    <!-- SetPushActivity -->
+    <string name="set_push">推送通知</string>
+    <!-- ModifyPassWordActivity -->
+    <string name="input_pre_password">输入原密码</string>
+    <string name="input_new_password">输入新密码(由6~12位数字和字母组成)</string>
+    <string name="input_new_password_again">再次输入新密码</string>
+
+    <!-- CommissionActivity -->
+    <string name="commission_submit">提现</string>
+    <string name="unpay_money">未提现：</string>
+    <string name="pay_money">已提现：</string>
+    <string name="income_record">进账记录</string>
+    <string name="out_record">提现记录</string>
+    <!-- MyMessageActivity -->
+    <string name="my_message_cancel">取消</string>
+    <string name="my_message_delete">删除</string>
+
+    <!-- LoanCalcActivity -->
+    <string name="loan_title_sy">商业贷款</string>
+    <string name="loan_title_zh">组合贷款</string>
+    <string name="loan_title_gj">公积金贷款</string>
+    <string-array name="loanpaytype">
+        <item>等额本息</item>
+        <item>等额本金</item>
+    </string-array>
+    <string-array name="loancounttype">
+        <item>根据面积，单价计算</item>
+        <item>根据贷款总额</item>
+    </string-array>
+    <string-array name="loanyeartype">
+        <item>1年(12期)</item>
+        <item>2年(24期)</item>
+        <item>3年(36期)</item>
+        <item>4年(48期)</item>
+        <item>5年(60期)</item>
+        <item>6年(72期)</item>
+        <item>7年(84期)</item>
+        <item>8年(96期)</item>
+        <item>9年(108期)</item>
+        <item>10年(120期)</item>
+        <item>11年(132期)</item>
+        <item>12年(144期)</item>
+        <item>13年(156期)</item>
+        <item>14年(168期)</item>
+        <item>15年(180期)</item>
+        <item>16年(192期)</item>
+        <item>17年(204期)</item>
+        <item>18年(216期)</item>
+        <item>19年(228期)</item>
+        <item>20年(240期)</item>
+        <item>25年(300期)</item>
+        <item>30年(360期)</item>
+    </string-array>
+    <string-array name="loanchengshutype">
+        <item>1成</item>
+        <item>2成</item>
+        <item>3成</item>
+        <item>4成</item>
+        <item>5成</item>
+        <item>6成</item>
+        <item>7成</item>
+        <item>8成</item>
+        <item>9成</item>
+    </string-array>
+    <string-array name="loanratesytype">
+        <item>最新基准利率1.3倍</item>
+        <item>最新基准利率1.2倍</item>
+        <item>最新基准利率1.1倍</item>
+        <item>最新基准利率</item>
+        <item>最新基准利率9折</item>
+        <item>最新基准利率8.5折</item>
+        <item>最新基准利率8折</item>
+        <item>最新基准利率7折</item>
+    </string-array>
+    <string-array name="loanrategjtype">
+        <item>公积金 3.75%</item>
+        <item>公积金 3.25%</item>
+    </string-array>
+    <string-array name="loanratesttype">
+        <item>5.65</item>
+        <item>5.50</item>
+    </string-array>
+
+    <!-- TaxCalcActivity -->
+    <string-array name="taxrates">
+        <item>1.0%</item>
+        <item>1.5%</item>
+        <item>3.0%</item>
+    </string-array>
+    <string-array name="styles">
+        <item>普通住宅</item>
+        <item>非普通住宅</item>
+        <item>经济适用房</item>
+    </string-array>
+    <string-array name="years">
+        <item>两年以下</item>
+        <item>两年至五年</item>
+        <item>五年以上</item>
+    </string-array>
+    <string-array name="jizheng">
+        <item>总价</item>
+        <item>差价</item>
+    </string-array>
+    <!-- SuggestActivity -->
+    <string name="suggest_hint">请留下您的宝贵意见，售房宝感谢您的支持(限200字)</string>
+    <!-- ModifyPhoneNumActivity -->
+    <string name="pre_phone_num">原手机号：</string>
+    <string name="new_phone_num">新手机号：</string>
+    <string name="phone_code">验证码：</string>
+    <string name="get_code">获取验证码</string>
+    <string name="up_card">上传名片</string>
+    <string name="retrytip">重试</string>
+    <string name="modify_phone_tip">*尊敬的售房宝客户，手机号是您身份的重要标识，关系到您提现以及个人信息安全，请您认真操作！有效证件：比如：身份证、学历证等能证明您身份的证件！</string>
+    <!-- XuanChuanPageActivity -->
+    <string name="model">模板</string>
+    <string name="mine">我的</string>
+    <!-- VersionActivity -->
+    <string name="current_version">当前版本V3.0</string>
+    <string name="check_update">检查更新</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="close">关闭</string>
+    <string name="open">开启</string>
+    <string-array name="build_type">
+        <item>不限</item>
+        <item>住宅</item>
+        <item>公寓</item>
+        <item>别墅</item>
+        <item>商铺</item>
+        <item>写字楼</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="build_layout">
+        <item>不限</item>
+        <item>一居</item>
+        <item>两居</item>
+        <item>三居</item>
+        <item>四居</item>
+        <item>五居及以上</item>
+    </string-array>
+
+    <!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE]  -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="pull_to_refresh_my">下拉刷新</string>
+    <string name="release_to_refresh_my">松开刷新数据</string>
+    <string name="refreshing_my">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="title_activity_dazhuan_pan">DazhuanPanActivity</string>
+</resources>

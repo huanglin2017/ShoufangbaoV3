@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <EditText
+        android:id="@+id/sug_text"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_shape_bg"
+        android:gravity="top"
+        android:hint="@string/suggest_hint"
+        android:maxLength="200"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#464646"
+        android:textColorHint="@color/divider_line"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/sug_phone"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_shape_bg"
+        android:gravity="top"
+        android:hint="@string/login_edit_phone_hint"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#464646"
+        android:textColorHint="@color/divider_line"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/sug_commit"
+        android:background="@drawable/common_btn_redframe"
+        android:textSize="16sp"
+        android:textColor="@color/common_text_redtowhite"
+        android:layout_width="148dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/common_bottom_button" />
+</LinearLayout>

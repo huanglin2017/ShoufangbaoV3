@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="@drawable/bg_signdialogtop" />
+
+    <TextView
+        android:id="@+id/commonok_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:textColor="#323232"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/commonok_dailog_content"
+        style="@style/SmallTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="27dp"
+        android:includeFontPadding="false" />
+
+    <Button
+        android:id="@+id/commomok_dialog_btn"
+        android:layout_width="75dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/bg_corner_red"
+        android:includeFontPadding="false"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+</LinearLayout>

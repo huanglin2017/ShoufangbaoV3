@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="301dp"
+    android:layout_height="455dp"
+    android:background="@drawable/point_mall_guess">
+
+    <TextView
+        android:id="@+id/dialog_caiyicai_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/question_dialog_title_margintop"
+        android:includeFontPadding="false"
+        android:maxWidth="232dp"
+        android:text="猜一猜"
+        android:textColor="#be1a20"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dialog_caiyicai_content"
+        style="@style/SmallTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_caiyicai_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:maxWidth="232dp" />
+
+    <ImageView
+        android:id="@+id/dialog_caiyicai_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="@dimen/question_dialog_close_margintop"
+        android:src="@drawable/point_mall_closeguess" />
+
+    <LinearLayout
+        android:id="@+id/dialog_caiyicai_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_caiyicai_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/caiyicai_answerone_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/caiyicai_answerone_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/point_mall_rguess"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/caiyicai_answerone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/question_text_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="A"
+                android:textColor="@color/question_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/caiyicai_answertwo_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/caiyicai_answertwo_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/point_mall_rguess"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/caiyicai_answertwo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/question_text_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="B"
+                android:textColor="@color/question_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/caiyicai_answerthree_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/caiyicai_answerthree_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/point_mall_rguess"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/caiyicai_answerthree_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/question_text_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="C"
+                android:textColor="@color/question_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_caiyicai_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_caiyicai_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/point_mall_okguess" />
+
+    <ImageView
+        android:id="@+id/dialog_caiyicai_image_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_caiyicai_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:src="@drawable/point_mall_cbg" />
+    <TextView
+        android:id="@+id/dialog_caiyicai_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_caiyicai_ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:maxWidth="150dp"
+        android:singleLine="true"
+        android:textSize="10sp" />
+</RelativeLayout>

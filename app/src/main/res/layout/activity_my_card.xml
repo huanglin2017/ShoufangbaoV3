@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_use"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/tab_my_card"
+                android:gravity="center"
+                android:text="可使用"
+                android:textColor="@color/tab_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_used"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_my_card"
+                android:gravity="center"
+                android:text="已使用"
+                android:textColor="@color/tab_selector"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_timeout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableBottom="@drawable/tab_my_card"
+                android:gravity="center"
+                android:text="已过期"
+                android:textColor="@color/tab_selector"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_my_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

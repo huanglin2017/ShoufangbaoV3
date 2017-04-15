@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/selector_account_setting"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/lock_pattern"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/lock_checkbox_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:checked="false" />
+    </LinearLayout>
+
+    <View style="@style/DividerLine" />
+
+    <LinearLayout
+        android:id="@+id/lock_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="@drawable/selector_account_setting"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/modify_lock_pattern"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/common_rawright_black" />
+        </LinearLayout>
+
+        <View style="@style/DividerLine" />
+    </LinearLayout>
+
+
+</LinearLayout>

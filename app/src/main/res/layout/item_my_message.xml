@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:background="@drawable/btn_check"
+            android:gravity="center_vertical"
+            android:button="@null"/>
+        <TextView
+            android:layout_toRightOf="@id/checkbox"
+            android:id="@+id/message_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxWidth="185dp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            style="@style/SmallTitle"/>
+
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="#464646"/>
+        <ImageView
+            android:id="@+id/message_enter_img"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+</LinearLayout>

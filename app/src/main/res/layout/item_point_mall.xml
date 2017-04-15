@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/item_point_mall_img"
+        android:layout_width="108dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SmallTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="商品名称：" />
+
+                    <TextView
+                        android:id="@+id/item_point_mall_goodsname"
+                        style="@style/SmallTitle"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="兑换积分：" />
+
+                    <TextView
+                        android:id="@+id/item_point_mall_integral"
+                        style="@style/ContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="#be1a20" />
+
+                    <TextView
+                        style="@style/ContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="积分" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="兑换城市：" />
+
+                    <TextView
+                        android:id="@+id/item_point_mall_city"
+                        style="@style/ContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="库存量：" />
+
+                    <TextView
+                        android:id="@+id/item_point_mall_stock"
+                        style="@style/ContentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_point_mall_change"
+                style="@style/ButtonStyle"
+                android:textSize="12sp"
+                android:layout_width="68dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:text="立即兑换" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

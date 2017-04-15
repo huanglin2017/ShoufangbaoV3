@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Shoufangbao"></dbname>
+    <version value="3"></version>
+    <list>
+        <mapping class="com.kupangstudio.shoufangbao.model.Custom"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.AuthArea"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.AuthCity"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.ContactBean"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.CustomFollow"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.FollowList"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.Splash"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.News"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.Report"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.SelectCity"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.Banner"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.Build"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildDetail"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildParameter"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildImage"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildProfile"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildDetailNotice"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.Developer"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.DeveloperBuild"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.InRecord"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.Message"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.GoodsDetail"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.PointRecord"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.ExchangeRecord"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.OutRecord"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.ReportBuild"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.ReportLog"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.ReportEndLog"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildLayout"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildBase"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.BuildCommission"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.Scene"></mapping>
+        <mapping class="com.kupangstudio.shoufangbao.model.ScenePic"></mapping>
+    </list>
+</litepal>

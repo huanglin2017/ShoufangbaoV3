@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#be1a20" >
+
+            <ImageView android:id="@+id/navbar_image_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/common_titlebar_left"/>
+
+            <Button
+                android:id="@+id/taxcalc_button_chongzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="重置"
+                />
+            <TextView android:id="@+id/navbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+            <ProgressBar
+                android:id="@+id/navbar_pb"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@id/navbar_title"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/common_loading_progress"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/taxcalc_new"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="新   房"
+                android:textColor="@color/custom_titlebar_text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/divider_line" />
+            <TextView
+                android:id="@+id/taxcalc_old"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="二手房"
+                android:textColor="@color/custom_titlebar_text"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:id="@+id/taxcalc_new_jisuanqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="单价："
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/taxcalc_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/small_title"
+                    android:background="@null"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20dp"
+                    android:text="元/平方米"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+
+            <LinearLayout
+                android:id="@+id/tabbar_new_select"
+                android:layout_width="fill_parent"
+                android:layout_height="43dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="面积："
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/taxcalc_size"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="@color/small_title"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20dp"
+                    android:text="平方米"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/taxcalc_ratelayout"
+                android:layout_width="match_parent"
+                android:layout_height="43dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="税费利率"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/taxcalc_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/common_rawright_black" />
+
+                <TextView
+                    android:id="@+id/taxcalc_ratetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:textColor="@color/content_text"
+                    android:layout_toLeftOf="@id/taxcalc_row"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/taxcalc_old_jisuanqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="单价："
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/taxcalc_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/small_title"
+                    android:background="@null"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20dp"
+                    android:text="元/平方米"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+            <LinearLayout
+                android:id="@+id/tabbar_old_select"
+                android:layout_width="fill_parent"
+                android:layout_height="43dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="面积："
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/taxcalc_old_size"
+                    android:layout_width="100dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/small_title"
+                    android:background="@null"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="平方米"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+            <LinearLayout
+                android:id="@+id/daxiao_old_select"
+                android:layout_width="fill_parent"
+                android:layout_height="43dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+
+                    android:text="房屋原总价："
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/taxcalc_old_tolprice"
+                    android:layout_width="100dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="@color/small_title"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="万元"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+            <RelativeLayout
+                android:id="@+id/taxc_jizheng"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="计征方式"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/tax_jizheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/common_rawright_black" />
+
+                <TextView
+                    android:id="@+id/tax_jizheng_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/tax_jizheng"
+                    android:textColor="@color/content_text"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+            <RelativeLayout
+                android:id="@+id/taxc_style"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="房产性质"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/tax_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/common_rawright_black" />
+
+                <TextView
+                    android:id="@+id/tax_style_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/content_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/tax_style"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+            <RelativeLayout
+                android:id="@+id/taxc_year"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_centerVertical="true"
+                    android:text="房产购置年限"
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/tax_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/common_rawright_black" />
+
+                <TextView
+                    android:id="@+id/tax_year_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/content_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/tax_year"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="买房家庭首次购房："
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/taxc_select_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/taxc_select_first_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/common_singlechoice"
+                        android:drawablePadding="8dp"
+                        android:text="是"
+                        android:textSize="14sp"
+                        android:textColor="@color/small_title" />
+
+                    <RadioButton
+                        android:id="@+id/taxc_select_first_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/common_singlechoice"
+                        android:drawablePadding="8dp"
+                        android:text="否"
+                        android:textColor="@color/small_title"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/divider_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="卖房家庭唯一住房："
+                    android:textColor="@color/small_title"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/taxc_select_weiyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/taxc_select_weiyi_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/common_singlechoice"
+                        android:drawablePadding="8dp"
+                        android:text="是"
+                        android:textSize="14sp"
+                        android:textColor="@color/small_title" />
+
+                    <RadioButton
+                        android:id="@+id/taxc_select_weiyi_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/common_singlechoice"
+                        android:drawablePadding="8dp"
+                        android:text="否"
+                        android:textColor="@color/small_title"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/taxcalc_button"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_red_content"
+            android:text="计算"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/taxcalc_button_old"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_red_content"
+            android:text="计算"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

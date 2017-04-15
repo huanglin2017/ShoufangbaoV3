@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/current_city_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="@string/current_city"
+        android:textColor="@color/big_title"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/current_city"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:textColor="@color/current_city_color_name"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#f4efef"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="@string/selected_city"
+        android:textColor="#323232"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff8f8" />
+</LinearLayout>

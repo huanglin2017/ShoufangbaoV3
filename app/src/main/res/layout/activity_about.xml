@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="        售房宝，中国房地产O2O电商领先品牌！"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="        售房宝是一款面向房产经纪人服务的原生手机客户端，由北京云扬思海科技有限公司倾力打造。"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="        客户端汇集一手楼盘优质资源，2016年，售房宝在全国多地市分公司和运营中心全面铺开，属于售房宝与售房宝经纪人的房地产020时代已经到来。"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="        在这里，动动手指，轻松报备，您将收获精品优质的楼盘、及时体贴的服务、专业案场人员的协助、保障性的客户确认单、业内最高佣金一周快速结算；"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="        在这里，最新资讯不断，计算器、日程管理、短信模版轻松使用，总有一种服务贴近你；"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="        售房宝，加入我们，改变自己。"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="13dp"
+            android:text="        客户热线：400-011-6929"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="13dp"
+            android:text="        地址：北京市海淀区农大南路88号万霖大厦"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="13dp"
+            android:text="        网址：www.shoufangbao.com"
+            android:textColor="#5a5a5a"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/logo_yysh" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/logo_about" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="227dp"
+        android:layout_height="322dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/report_hongbao_pre">
+
+
+        <TextView
+            android:id="@+id/hongbao_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            android:text="今日报备红包活动过点啦！"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/hongbao_time_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hongbao_time_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="宝财神已经敲过钟啦！"
+            android:textColor="#ffdfa1"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/hongbao_time_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hongbao_time_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp"
+            android:src="@drawable/packet_known" />
+    </RelativeLayout>
+</RelativeLayout>

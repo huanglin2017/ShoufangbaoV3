@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/multialpha"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/divider_tiao"
+        android:paddingBottom="5dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="4dp"
+        android:textColor="#a0a0a0"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/multialpha"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <CheckBox
+            android:id="@+id/multicheck"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:button="@null"
+            android:background="@drawable/common_btn_check"/>
+
+        <TextView
+            android:id="@+id/multiname"
+            android:layout_toRightOf="@id/multicheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            style="@style/SmallTitle"/>
+
+        <TextView
+            android:id="@+id/multinumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/multiname"
+            android:layout_toRightOf="@id/multicheck"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:visibility="gone"
+            style="@style/ContentText"/>
+    </RelativeLayout>
+</RelativeLayout>

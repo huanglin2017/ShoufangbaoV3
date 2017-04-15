@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/DividerLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_main_bottom_height"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_main_home"
+            android:paddingTop="3dp"
+            android:text="@string/main_btn_main"
+            android:textColor="@color/btn_navigation_color" />
+
+        <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_main_custom"
+            android:paddingTop="3dp"
+            android:text="@string/main_btn_custom"
+            android:textColor="@color/btn_navigation_color" />
+
+        <Button
+            android:id="@+id/btn_community"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_main_community"
+            android:paddingTop="3dp"
+            android:text="@string/main_btn_community"
+            android:textColor="@color/btn_navigation_color" />
+
+        <Button
+            android:id="@+id/btn_center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_main_personalcenter"
+            android:paddingTop="3dp"
+            android:text="@string/main_btn_personalcenter"
+            android:textColor="@color/btn_navigation_color" />
+    </LinearLayout>
+</LinearLayout>

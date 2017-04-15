@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/item_commissiontime"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#656565"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_commissiontype"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:textColor="#656565"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_commissionmoney"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#656565"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_commissionstatus"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#656565"
+        android:textSize="13sp" />
+
+</LinearLayout>

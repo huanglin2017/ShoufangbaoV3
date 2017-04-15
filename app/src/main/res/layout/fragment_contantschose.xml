@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+    <ListView android:id="@+id/contantschose_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_item_sepline"
+        android:dividerHeight="1.0px"
+        android:fastScrollEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+
+    <com.kupangstudio.shoufangbao.widget.QuickAlphabeticBar
+        android:id="@+id/fast_scroller"
+        android:layout_width="22dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|right|center"
+        android:layout_marginTop="0dip"
+        android:background="@color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/contact_bg_list" />
+
+    <TextView
+        android:id="@+id/fast_position"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="34dip"
+        android:background="@drawable/sort_icon_bg_click"
+        android:gravity="center"
+        android:padding="2dip"
+        android:textColor="#404040"
+        android:textSize="48dip"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

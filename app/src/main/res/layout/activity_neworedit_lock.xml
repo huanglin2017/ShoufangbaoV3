@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <ImageView
+        android:id="@+id/gesturepwd_unlock_face"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/lockpattern_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="绘制解锁图案"
+        style="@style/BigTitle"
+        />
+    <com.kupangstudio.shoufangbao.widget.LockPatternView
+        android:id="@+id/lockpattern_lock"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        />
+</LinearLayout>

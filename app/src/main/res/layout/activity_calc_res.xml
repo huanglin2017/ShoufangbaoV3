@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.kupangstudio.shoufangbao.widget.MyListView
+                android:id="@+id/calcres_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/divider_line"
+                android:divider="@color/divider_line"
+                android:dividerHeight="1px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+
+            <TextView
+                android:id="@+id/jisuanqi_beizhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="5dp"
+                android:text="备注:\n1.北京5环以内单价39600,总价468万,5环—6环单价31680,总价374.4万,6环之外单价23670,总价280.8万,满足其中一项,即为普通住宅;\n2.【北京成本价购买的已购公房】土地出让金为:15.6*建筑面积,【北京优惠价购买的已购公房】土地出让金为:15.6*建筑面积*6;\n3.另外,北京二手房普通住宅税费需缴纳工本费为90元,经济适用房满5年上市,需要缴纳地区指导价的10%。"
+                android:textColor="@color/content_text"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

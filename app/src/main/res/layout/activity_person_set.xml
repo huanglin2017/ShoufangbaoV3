@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/person_set_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.kupangstudio.shoufangbao.PersonSetActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/common_title_bar" >
+
+        <ImageView android:id="@+id/navbar_image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/common_titlebar_left"/>
+
+        <TextView android:id="@+id/navbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="*请先选择您的房源订制条件"
+        android:textColor="#bab7b7"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/person_set_area"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区域：" />
+
+        <TextView
+            android:id="@+id/person_set_area_txt"
+            style="@style/SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="15dp"
+        android:background="@color/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/person_set_price"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格：" />
+
+        <TextView
+            android:id="@+id/person_set_price_txt"
+            style="@style/SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="15dp"
+        android:background="@color/divider_line" />
+
+    <LinearLayout
+        android:id="@+id/person_set_type"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型：" />
+
+        <TextView
+            android:id="@+id/person_set_type_txt"
+            style="@style/SmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_rawright_black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="15dp"
+        android:background="@color/divider_line" />
+    <Button
+        android:id="@+id/person_set_submit"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/Big_Button"
+        android:text="完成"
+        />
+</LinearLayout>

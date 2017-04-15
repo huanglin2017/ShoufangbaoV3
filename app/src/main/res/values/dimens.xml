@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="divider_height">1px</dimen>
+    <dimen name="divider_tiao">10dp</dimen>
+    <!--&lt;!&ndash; lockpattern图案解锁 &ndash;&gt;-->
+    <!--<dimen name="alp_42447968_lockpatternview_size">350dp</dimen>-->
+    <!--<dimen name="alp_42447968_separator_size">1dp</dimen>-->
+    <!--<dimen name="alp_42447968_lock_pattern_dot_line_width">3dp</dimen>-->
+    <!--<dimen name="alp_42447968_lock_pattern_dot_size">12dp</dimen>-->
+    <!--<dimen name="alp_42447968_lock_pattern_dot_size_activated">28dp</dimen>-->
+    <!-- 客户界面 -->
+    <!-- 字母索引 -->
+    <dimen name="sidebartext">12sp</dimen>
+    <!-- 字母展示 -->
+    <dimen name="custom_filterlayout_height">25dp</dimen>
+    <dimen name="custom_filteritemlayout_height">16dp</dimen>
+    <!--MainActivity -->
+    <dimen name="activity_main_bottom_height">49dp</dimen>
+    <!-- 通用的popmenu -->
+    <dimen name="popmenu_width">80dp</dimen>
+    <dimen name="popmenu_imagewidth">121dp</dimen>
+    <dimen name="popmenu_imagewidth_1">103dp</dimen>
+    <dimen name="popmenu_yoff">5dp</dimen>
+
+    <!-- 社区空状态适配 -->
+    <dimen name="image_margin">120dp</dimen>
+    <dimen name="text_margin">90dp</dimen>
+    <dimen name="button_margin">50dp</dimen>
+
+    <!-- 积分商城空状态适配 -->
+    <dimen name="image_margin_point">150dp</dimen>
+    <dimen name="text_margin_point">120dp</dimen>
+    <dimen name="button_margin_point">80dp</dimen>
+</resources>

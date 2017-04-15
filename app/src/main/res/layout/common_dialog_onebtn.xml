@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:background="@drawable/common_app_dialog" />
+
+    <TextView
+        android:id="@+id/common_dialog_title"
+        style="@style/SmallTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:includeFontPadding="false"/>
+    <TextView
+        android:id="@+id/common_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="#323232"
+        android:visibility="gone"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/common_positive_btn"
+        android:layout_width="75dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/button_red_content"
+        android:includeFontPadding="false"
+        android:text="知道了"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+    <Button
+        android:id="@+id/common_negative_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+</LinearLayout>
